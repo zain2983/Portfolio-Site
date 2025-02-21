@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-white p-4 w-full max-w-md mx-auto mt-5 rounded-2xl shadow-lg border-2" style={{ borderColor: "rgb(52, 51, 48)" }}>
+    <nav className="p-5 w-full max-w-md mx-auto mt-5 rounded-2xl shadow-lg border-2 max-w-md:mt-25" style={{ borderColor: "rgb(52, 51, 48)" }}>
       <div className="flex justify-between items-center">
         
         {/* Logo */}
@@ -16,7 +16,7 @@ const Navbar = () => {
         </h1>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-white text-2xl text-mainColor" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-2xl text-mainColor" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? "✖" : "☰"}
         </button>
 
